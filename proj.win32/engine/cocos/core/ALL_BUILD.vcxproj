@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{75252B2B-76F5-3DBF-9A5B-BC9E878EAFCF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\LTG3\Survival\cocos2d\cocos\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/LTG3/Survival/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/LTG3/Survival -BD:/LTG3/Survival/proj.win32 --check-stamp-file D:/LTG3/Survival/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\LTG3\Survival\cocos2d\cocos\2d\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\3d\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\audio\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\base\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\math\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\navmesh\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\network\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\physics\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\physics3d\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\platform\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\renderer\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\ui\CMakeLists.txt;D:\LTG3\Survival\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\LTG3\Survival\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/LTG3/Survival/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/LTG3/Survival -BD:/LTG3/Survival/proj.win32 --check-stamp-file D:/LTG3/Survival/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\LTG3\Survival\cocos2d\cocos\2d\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\3d\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\audio\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\base\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\math\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\navmesh\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\network\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\physics\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\physics3d\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\platform\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\renderer\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\ui\CMakeLists.txt;D:\LTG3\Survival\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\LTG3\Survival\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/LTG3/Survival/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/LTG3/Survival -BD:/LTG3/Survival/proj.win32 --check-stamp-file D:/LTG3/Survival/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\LTG3\Survival\cocos2d\cocos\2d\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\3d\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\audio\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\base\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\math\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\navmesh\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\network\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\physics\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\physics3d\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\platform\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\renderer\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\ui\CMakeLists.txt;D:\LTG3\Survival\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\LTG3\Survival\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/LTG3/Survival/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/LTG3/Survival -BD:/LTG3/Survival/proj.win32 --check-stamp-file D:/LTG3/Survival/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\LTG3\Survival\cocos2d\cocos\2d\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\3d\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\audio\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\base\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\math\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\navmesh\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\network\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\physics\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\physics3d\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\platform\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\renderer\CMakeLists.txt;D:\LTG3\Survival\cocos2d\cocos\ui\CMakeLists.txt;D:\LTG3\Survival\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\LTG3\Survival\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\LTG3\Survival\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{119A834B-4B77-3B85-A06D-CBBE45DCF16B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\LTG3\Survival\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{143FC7FF-54A9-3FAA-9211-43D3A12EB3BF}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LTG3\Survival\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{A20A569E-0823-3485-8BD6-D36ABCCB99F2}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LTG3\Survival\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{70B1E8E2-95C4-384C-AD23-5AA44E74A9E7}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LTG3\Survival\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{DB5159AD-708E-35BA-90C1-4E6D2F569C2B}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LTG3\Survival\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{91D25A63-98D2-3355-BB9B-7CD72AAEF8AB}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LTG3\Survival\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{377F357A-C1DA-3A82-91D9-58065A95CF4E}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LTG3\Survival\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{87969339-DD02-3E13-B8A0-DDAA65DBF314}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LTG3\Survival\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{AC917652-16CD-307B-98CF-0F00EF491BF9}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LTG3\Survival\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{9002F32D-11B6-3697-B6CA-B8BAF0847A5C}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LTG3\Survival\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{6353A611-660E-3268-9144-D2AC706E4FC0}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LTG3\Survival\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{0202C069-6210-325C-90CB-10C9D6D061E7}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LTG3\Survival\proj.win32\engine\external\external.vcxproj">
+      <Project>{31EB476C-A900-3B64-8AA8-AEC06F5F03DE}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
